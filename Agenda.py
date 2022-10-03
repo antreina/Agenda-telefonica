@@ -9,13 +9,16 @@ class Agenda:
     def menu(self):
         opcion=0
         while opcion!=5:
-            print("*******AGENDA*********\n")
-            print("1. Ingresar datos")
-            print("2. Listar datos")
-            print("3. Consultar datos")
-            print("4. Modificar el numero telefonico")
-            print("5. Salir")
-            print("*************************\n")
+            print("+-----------------------------------+")
+            print("|************** AGENDA *************|")
+            print("|- - - - - - - - - - - - - - - - - -|")
+            print("| 1. Ingresar datos                 |")
+            print("| 2. Listar datos                   |")
+            print("| 3. Consultar datos                |")
+            print("| 4. Modificar el numero telefonico |")
+            print("| 5. Salir                          |")
+            print("+-----------------------------------+")
+            
             opcion=int(input("ingrese su opcion: "))
             if opcion==1:
                 self.cargar()
@@ -73,4 +76,3 @@ class Agenda:
 
 agenda=Agenda()
 agenda.menu()
-                
